@@ -1,8 +1,12 @@
 input.onButtonPressed(Button.A, function () {
     P1 += 1
+    Round += 1
+    updatescores()
 })
 input.onButtonPressed(Button.AB, function () {
     Tie += 1
+    Round += 1
+    updatescores()
 })
 function updatescores () {
     OLED.clear()
@@ -16,6 +20,8 @@ function updatescores () {
 }
 input.onButtonPressed(Button.B, function () {
     P2 += 1
+    Round += 1
+    updatescores()
 })
 let P1 = 0
 let P2 = 0
